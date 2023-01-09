@@ -6,8 +6,8 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>Common patterns used by Rhythm NuGet packages.</Description>
-	<Company>Rhythm</Company>
-	<Authors>rhythmagency</Authors>
+    <Company>Rhythm</Company>
+    <Authors>rhythmagency</Authors>
     <PackageProjectUrl>https://github.com/rhythmagency/rhythm.patterns</PackageProjectUrl>
     <RepositoryUrl>https://github.com/rhythmagency/rhythm.patterns</RepositoryUrl>
   </PropertyGroup>
