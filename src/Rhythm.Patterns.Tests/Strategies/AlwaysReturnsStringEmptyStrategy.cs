@@ -4,7 +4,7 @@ using Rhythm.Patterns.Strategies;
 
 internal sealed class AlwaysReturnsStringEmptyStrategy : Strategy<object, string>
 {
-    protected override string? Execute(object? input)
+    protected override string? Execute(object input)
     {
         return string.Empty;
     }

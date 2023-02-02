@@ -6,7 +6,7 @@ internal sealed class AlwaysValidatesStrategy : Strategy<object, string>
 {
     public const string Output = "output";
 
-    protected override string? Execute(object? input)
+    protected override string? Execute(object input)
     {
         return Output;
     }

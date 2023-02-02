@@ -7,9 +7,9 @@
 public abstract class Strategy<TInput, TOutput> : IStrategy<TInput, TOutput?>
 {
     /// <inheritdoc />
-    public IStrategyResult<TOutput?> TryExecute(TInput input)
+    public virtual IStrategyResult<TOutput?> TryExecute(TInput input)
     {
-        if (ValidateInput(input) == false)
+        if (input is null || ValidateInput(input) == false)
         {
             return StrategyResult<TOutput?>.Fail();
         }
@@ -24,7 +24,7 @@ public abstract class Strategy<TInput, TOutput> : IStrategy<TInput, TOutput?>
     /// </summary>
     /// <param name="input">The input.</param>
     /// <returns>A <see cref="TOutput?"/>.</returns>
-    protected abstract TOutput? Execute(TInput? input);
+    protected abstract TOutput? Execute(TInput input);
 
     /// <summary>
     /// Validating the incoming input on whether this strategy can be executed or not.
